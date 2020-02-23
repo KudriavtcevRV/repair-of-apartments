@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/.eot");
+  src: url("../fonts/MuseoSansCyrl/.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/.woff") format("woff"), url("../fonts/MuseoSansCyrl/.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+/*Стили навигационной панели navbar*/
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */

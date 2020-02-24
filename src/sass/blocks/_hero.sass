@@ -1,0 +1,42 @@
+.hero
+	padding: 50px 0 52px
+	background-color: $bgc-color
+	&-block
+		display: flex
+	&-text
+		flex-basis: 50%
+		&__title
+			margin-bottom: 37px
+			font-size: 41px
+			+bold
+			line-height: 55px
+		&__subtitle
+			margin-bottom: 67px
+			+bold
+			font-size: 20px
+	&-list
+		&__items
+			display: flex
+			align-items: center
+			margin-bottom: 24px
+			&:last-child
+				margin-bottom: 0
+		&__text
+			display: inline-block
+			max-width: 250px
+			font-size: 14px
+			line-height: 24px
+		&__image
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-right: 30px
+			width: 38px
+			height: 38px
+			border: 2px solid $main-color
+			border-radius: 50%
+	&__img
+		margin-left: 15px
+	&-img
+		&_shadow
+			box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)

@@ -1,3 +1,27 @@
 .navbar
+  padding: 7px 0 8px 0
   &-block
     display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center
+    text-align: right
+  &__phone
+    display: inline-block
+    margin-top: 9px
+    +bold
+    font-size: 20px
+    color: $text-color
+  &__address
+    display: flex
+    flex-direction: column
+    color: $text-color
+    +reg
+    font-size: 13px
+  &__button
+    padding: 18px 30px
+    margin-left: 30px
+    font-size: 13px
+  

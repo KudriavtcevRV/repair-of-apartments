@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/** Подключаем шрифты **/
 @font-face {
   font-family: 'Museo Sans Bold';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
@@ -15,21 +16,117 @@
   font-style: normal;
 }
 
+/** Стили общего характера **/
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1170px;
   margin: auto;
 }
 
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 /*Стили навигационной панели navbar*/
+.navbar {
+  padding: 7px 0 8px 0;
+}
+
 .navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: right;
+}
+
+.navbar__phone {
+  display: inline-block;
+  margin-top: 9px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #333333;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #333333;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+/** адаптив под разные экраны **/
+/** Адаптив блока navbar **/
+@media (max-width: 1200px) and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 77%;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 15px 26px;
+    font-size: 10px;
+  }
+  .navbar__logo {
+    width: 91px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

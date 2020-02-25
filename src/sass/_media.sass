@@ -1,4 +1,4 @@
-/** Адаптив блока navbar **/
+/** dekstop and mobile **/
 @media (max-width: 1200px)
   .container
     width: 970px
@@ -10,9 +10,34 @@
         max-width: 480px
     &__img
       margin-top: 38px
+  .offer
+    background-size: cover
+    &-block
+      padding-right: 70px
+    &__input
+      width: 100%
+      &:first-child
+        margin-right: 0
 @media (max-width: 992px)
   .container
     width: 750px
+  .offer
+    &-block
+      padding-right: 30px
+    &__title
+      font-size: 23px
+    &__subtitle
+      font-size: 15px
+    &__input
+      &:first-child
+        margin-bottom: 8px
+    &__button
+      margin-top: 10px
+      font-size: 15px
+    &-feedback
+      flex-direction: column
+      &__text
+        margin-bottom: 18px
 @media (max-width: 768px)
   .container
       width: 77%
@@ -40,12 +65,40 @@
         line-height: 1.2
     &-list
       &__items
-        margin-bottom: 18px
+        margin-bottom: 21px
       &__text
         max-width: 200px
         font-size: 12px
         line-height: 1.4
       &__image
         margin-right: 15px
+  .offer
+    padding-top: 48px
+    padding-bottom: 53px
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      margin-bottom: 10px
+      width: 260px
+      font-size: 18px
+      line-height: 1.4
+    &__subtitle
+      margin-bottom: 27px
+      font-size: 14px
+    &__button
+      margin-bottom: 20px
+      font-size: 14px
+      padding: 27px 0px
+    &-feedback
+      &__text
+        margin-bottom: 9px
+@media (max-width: 480px)
+  .offer
+    &__button
+      padding: 19px 60px
+
+      
 
         

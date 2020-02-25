@@ -1,8 +1,12 @@
+*
+  box-sizing: border-box
 body
   +reg
   color: $text-color
 img
   max-width: 100%
+input
+  outline: none
 a
   text-decoration: none
 .container
@@ -14,6 +18,26 @@ a
   border: none
   font-size: 16px
   +bold
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding-top: 100px
+  padding-bottom: 100px
+  &-title
+    margin: 0
+    +bold
+    font-size: 24px
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  border-radius: 10px
+  border: 1px solid $border-input
+  padding: 23px 26px
+  font-size: 15px
+  color: $border-input
+
 
       
 

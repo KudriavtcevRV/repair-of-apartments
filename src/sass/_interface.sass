@@ -37,11 +37,38 @@ a
   border: 1px solid $border-input
   padding: 23px 26px
   font-size: 15px
-  color: $border-input
+  color: $text-color
+  &:focus
+    border: 1px solid $main-color
 .arrows
-  &__left,   &__right
+  &__left, &__right
     &:hover
       cursor: pointer
+.text
+	&-strong
+  color: $text-color
+  +bold
+.invalid
+	color: $error
+	border: 1px solid $error
+	&:focus
+		border: 1px solid $error
+div.invalid
+    text-align: center
+    +bold
+    border: none
+    font-size: 13px
+.map
+  &-hint
+    font-size: 15px
+    line-height: 50px
+    width: 350px
+    height: 50px
+    border: 2px solid $main-color
+    +bold
+
+
+
 
 
 

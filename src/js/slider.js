@@ -21,5 +21,14 @@ $(document).ready(function () {
 		}
 
 	]
-	})
+	});
+/* slider для модальных окон */
+	$('.offer-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: $('.office-arrows__left'),
+		nextArrow: $('.office-arrows__right')
+	});
+
+
 });

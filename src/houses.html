@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>houses</title>
+</head>
+
+<body>
+	<div class="repair">
+		<div class="repair-slider">
+			<div class="repair-slider__item">
+				<img src="img/repair/houses.jpg" alt="">
+			</div>
+			<div class="repair-slider__item">
+				<img src="img/repair/houses.jpg" alt="">
+			</div>
+			<div class="repair-slider__item">
+				<img src="img/repair/houses.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="arrows repair-arrows">
+			<div class="repair-arrows__left">
+				<img src="img/repair/arrow-left.png" alt="">
+			</div>
+			<!-- /.offer-arrows__left -->
+			<div class="repair-arrows__right">
+				<img src="img/repair/arrow-right.png" alt="">
+			</div>
+			<!-- /.offer-arrows__right -->
+		</div>
+
+		<p class="repair__description">Цена ремонта дачного дома или коттеджа будет зависеть от площади, использованных
+			материалов и видов проделанных работ.</p>
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- 	<script src="js/slider.js"></script> -->
+	<script>
+		$('.repair-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: $('.repair-arrows__left'),
+			nextArrow: $('.repair-arrows__right')
+		});
+	</script>
+</body>
+
+</html>
